@@ -7,15 +7,18 @@
 body {
   background-color: hsl(30, 38%, 92%);
   display: grid;
-  place-items: center;
-  height: 100vh;
+  place-content: center;
+  min-height: 100vh;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
+}
+img,svg{
+  max-width: 100%;
 }
 main {
   display: flex;
   flex-wrap: wrap;
-  width: 50%;
+  max-width: 600px;
 }
 .img-container {
   width: 50%;
@@ -33,7 +36,7 @@ main {
   background-color: hsl(0, 0%, 100%);
   border-radius: 0 7px 7px 0;}
 p {
-  color: hsl(228, 12%, 48%);
+  color: hsl(228, 12%, 48%); 
   margin: 25px 0;
   line-height: 22px;
   font-size: 14px;
@@ -90,8 +93,8 @@ button:hover {
 
 @media screen and (max-width: 600px) {
   .container {
-    width: 85%;
-    margin: 2rem 0 2rem 0;
+max-width: 450px;
+    margin: 2rem 1rem;
     flex-direction: column;
   }
   .img-container {
